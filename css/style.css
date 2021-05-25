@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Ubuntu;
+}
+/* jumbotron*/
+.jumbotron {
+	background-image: url(../gambar/pantai1.jpg);
+	background-size: cover;
+	height: 654px;
+	padding-top: 200px;
+}
+.jumbotron h1 {
+	font-weight: 650;
+	color: white;
+	text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5)
+}
+.jumbotron p {
+	color: white;
+	font-weight: 400;
+}
+.btn {
+	border-radius: 40px;
+	color: white;
+	padding: 10px 50px;
+	margin-top: 15px;
+}
+/* navbar*/
+nav span {
+	color: grey;
+}
+nav .navbar-brand {
+	font-weight: 700;
+}
+.aktif {
+	color: black;
+	background-color: white;
+	width: 100%;
+	transition: 0.5s;
+}
+nav .navbar-brand.hitam {
+	color: black;
+	font-size: 25px;
+	transition: 0.5s;
+}
+#navbarNav .nav-link.active.black {
+	color: black;
+	transition: 0.5s;
+}
+/* wisata*/
+#wisata h2 {
+	font-size: 30px;
+}
+/* kami*/
+#kami {
+	background-image: url(../gambar/pantai2.jpg);
+	background-size: cover;
+	height: 550px;
+	margin-top: 80px;
+	position: relative;
+}
+#kami h2,h1 {
+	z-index: 2;
+	position: relative;
+}
+#kami::after {
+	content: '';
+	width: 100%;
+	height: 550px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+}
+#kami .card {	
+	position: relative;
+	z-index: 2;
+	margin-top: 2rem;
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	border: none;
+	text-align: center;
+
+}
+.card h1 {
+	font-size: 55px;
+}
+#kita {
+	margin-top: 3rem;
+}
+.hr {
+	width: 100%;
+	height: 1px;
+	background-color: grey;
+	position: relative;
+	z-index: 1;
+}
+#kami .btn {
+	position: relative;
+	z-index: 1;
+}
+#akhir h1 {
+	font-size: 55px;
+}
+#akhir h5 {
+	font-size: 15px;
+}
+/* footer*/
+footer {
+	height: 50px;
+	background-color:rgba(0, 0, 0, 0.9);
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 12px;
+	margin-top: 2rem;
+}
+/* responsive*/
+@media screen and (max-width: 989px) {
+	#kami {
+		height: 600px;
+	}
+	#kami::after {
+	content: '';
+	width: 100%;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+}
+}
+@media screen and (max-width: 745px) {
+	#kami {
+		height: 1000px;
+	}
+	#kami::after {
+		content: '';
+		width: 100%;
+		height: 1000px;
+		background-color: rgba(0, 0, 0, 0.4);
+		position: absolute;
+		top: 0;
+	}
+	#ahkir h5 {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 567px) {
+	/* bagian navbar*/
+	nav .navbar-brand.hitam {
+		color: black;
+		font-size: 19px;
+		transition: 0.5s;
+	}
+	/* bagian jumbotron*/
+	.jumbotron h1 {
+		font-size: 25px;
+	}
+	.jumbotron {
+		height: 550px;
+	}
+	.jumbotron p {
+		font-size: 18px;
+		margin: 0 5px;
+	}
+	.btn {
+		margin-top: 25px;
+		padding: 5px 10px;
+	}
+	/* bagian wisata*/
+	#wisata {
+		overflow-x: hidden;
+	}
+	#wisata .btn {
+		margin-top: -4px;
+		padding: 5px 45px; 
+	}
+	#wisata h2 {
+		font-size: 24px;
+	}
+	#wisata h5 {
+		font-size: 15px;
+		font-weight: 400;
+	}
+	/* bagian kami*/
+	#kami h2 {
+		font-size: 24px;
+		font-weight: 400px;
+	}
+	#kami h5,p {
+		font-size: 15px;
+	}
+	#kami {
+		height: 1110px;
+		overflow-x: hidden;
+	}
+	#kami::after {
+		content: '';
+		width: 100%;
+		height: 1110px;
+		background-color: rgba(0, 0, 0, 0.4);
+		position: absolute;
+		top: 0;
+	}
+	#kita {
+		margin-top: 5px;
+	}
+	/* bagian akhir*/
+	#akhir h1 {
+		font-size: 45px;
+	}
+	#akhir {
+		margin-top: 5rem;
+	}
+	footer {
+		height: 47px;
+		padding: 13px 0;
+	}
+	footer p {
+		font-size: 12px;
+	}
+}
